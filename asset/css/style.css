@@ -1,0 +1,88 @@
+@import url('./reset.css');
+@import url('https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css');
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Gowun+Batang&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Gabarito:wght@400..900&family=Gowun+Batang&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+/* 
+Typography 
+
+Gabarito font - 
+// <weight>: Use a value from 400 to 900
+// <uniquifier>: Use a unique and descriptive class name 
+*/
+
+.kr-serif { font-family: "Gowun Batang", serif; font-weight: 400; font-style: normal; }
+.en-body { font-family: "Abel", sans-serif; font-weight: 300; font-style: normal; line-height: 128%;  }
+.en-title { font-family: "Gabarito", sans-serif; font-optical-sizing: auto; font-weight: 500; font-style: normal; letter-spacing: 0.5px;}
+
+h1 {font-size:6rem; line-height: 120%;}
+h2 {font-size:4.5rem; line-height: 120%;}
+h3 {font-size:3rem; line-height: 120%;}
+h4 {font-size:2.5rem; line-height: 120%;}
+h5 {font-size:2rem; line-height: 120%;}
+
+strong {font-weight: 500;}
+/* Common */
+* {font-family: 'Spoqa Han Sans Neo', 'sans-serif';  }
+
+body {width:calc(100% - 6rem); padding:3rem; background:#f5f7f9; }
+
+.body-index {background:#f5f7f9; width:calc(100% - 6rem); height:100vh; margin:0; padding:0 3rem; display: flex; justify-content: flex-start; align-items: center; overflow-y: hidden; overflow-x: scroll;}
+
+.contain {width:auto; height:100%; display: flex; justify-content: flex-start; align-items: center;  gap:6rem;}
+
+/* intro */
+.intro {display: flex; justify-content: flex-start; align-items: flex-start; gap:2rem; padding-left:4rem; }
+.intro > h1 {font-size:7rem; width:14rem;}
+.intro > section {padding-top:6rem; width:36rem;}
+.intro > section > article {border-left:3px solid #000; display: flex; flex-direction: column; gap:2rem; font-size: 1.375rem; padding-left:2rem; line-height: 132%;}
+
+
+/* info-desc */
+.project-desc {width:calc(60rem - 16rem); height:100vh; 
+    background:
+    linear-gradient(217deg, rgba(83, 118, 175, 1.0), rgba(253, 199, 180, 1) 70.71%),
+    linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
+    padding:8rem; display: flex; justify-content: flex-start; align-items: center;}
+.project-desc > section {width:100%; color:#fff;}
+.project-desc > section > article > p {padding:0.5rem 0; line-height: 138%; font-size:1.175rem; font-weight: 200;}
+
+
+
+/* gallery */
+figure {background:#fff; box-shadow: 0px 25px 23px -16px #CDD1D6; padding:0.5rem; }
+
+
+.gallery > section {display: flex; justify-content: flex-start; align-items: center; gap:12rem; padding:0 4rem}
+.gallery > section > .portrait >  div > figure {width:480px; height: auto; }
+.gallery > section > .landscape > div > figure {width:360px; height: auto; }
+
+figure img {width:100%; height: auto; object-fit:cover;}
+figure figcaption {width:100%; height:81px; padding:1rem 0 0 0; white-space: normal; overflow-wrap: break-word;}
+figure figcaption > span {display:block; padding-bottom:0.25rem;}
+
+.img-desc {width:100%; text-align:center; padding:2rem 0;}
+.img-desc p {font-size:0.875rem; padding:0.175rem 0; }
+
+/* 
+figcaption - 줄바꿈
+white-space:normal; overflow-wrap:break-word
+*/
+.contain-specific h4 {font-size:1.5rem;}
+
+section {padding:1rem 0;}
+article {padding: 1rem 0;}
+
+article > h4, article > div >  h4 {padding-bottom:0.5rem;}
+article > ul > li, article > div > ul > li {padding:0.15rem 0;}
+
+.bullet__dash > li::before {content:'-'; padding-right:0.5rem;}
+.section-col {display: flex; justify-content: flex-start; align-items: flex-start; gap:6rem;}
+.article-row {display: flex; flex-direction: column; gap:3rem;}
+
+
+
+  
+  
