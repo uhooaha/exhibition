@@ -34,17 +34,19 @@ body {width:calc(100% - 6rem); padding:3rem; background:#f5f7f9; }
 
 /* intro */
 .intro {display: flex; justify-content: flex-start; align-items: flex-start; gap:2rem; padding-left:4rem; }
-.intro > h1 {font-size:7rem; width:14rem;}
-.intro > section {padding-top:6rem; width:36rem;}
+.intro > h1 {font-size:7rem; width:8rem;}
+.intro > section {padding-top:6rem; width:56rem;}
 .intro > section > article {border-left:3px solid #000; display: flex; flex-direction: column; gap:2rem; font-size: 1.375rem; padding-left:2rem; line-height: 132%;}
 
-
+/* 
+background:
+    linear-gradient(217deg,  rgba(99, 130, 178, 1.0), rgba(220, 200, 170, 1.0) 100%),
+    linear-gradient(127deg, rgba(203, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%) 
+    ;*/
 /* info-desc */
-.project-desc {width:calc(60rem - 16rem); height:100vh; 
-    background:
-    linear-gradient(217deg, rgba(83, 118, 175, 1.0), rgba(253, 199, 180, 1) 70.71%),
-    linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%),
-    linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
+.project-desc {width:calc(50rem - 16rem); height:100vh; 
+    background: #000;
     padding:8rem; display: flex; justify-content: flex-start; align-items: center;}
 .project-desc > section {width:100%; color:#fff;}
 .project-desc > section > article > p {padding:0.5rem 0; line-height: 138%; font-size:1.175rem; font-weight: 200;}
@@ -55,8 +57,9 @@ body {width:calc(100% - 6rem); padding:3rem; background:#f5f7f9; }
 figure {background:#fff; box-shadow: 0px 25px 23px -16px #CDD1D6; padding:0.5rem; }
 
 
-.gallery > section {display: flex; justify-content: flex-start; align-items: center; gap:12rem; padding:0 4rem}
-.gallery > section > .portrait >  div > figure {width:480px; height: auto; }
+.gallery > section {display: flex; justify-content: flex-start; align-items: center; gap:12rem; padding:0 12rem}
+.gallery > section > article {display: flex; justify-content: center; align-items: center; flex-direction: column;} 
+.gallery > section > .portrait >  div > figure {width:300px; height: auto; }
 .gallery > section > .landscape > div > figure {width:360px; height: auto; }
 
 figure img {width:100%; height: auto; object-fit:cover;}
